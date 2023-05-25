@@ -160,11 +160,11 @@ class NewsFragment : Fragment() {
         }
         adapter.setClickEvent {
 
-            val bundle1 = Bundle()
-            bundle1.putString("url", it.url)
+            val bundle = Bundle()
+            bundle.putSerializable("selected_article",it)
             findNavController().navigate(
                 R.id.action_newsFragment_to_infoFragment,
-                bundle1
+                bundle
             )
         }
     }

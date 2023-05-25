@@ -28,8 +28,9 @@
         android:name="com.example.newsapiclient.presentation.fragment.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" >
-<!--        <argument-->
-<!--            android:name="selected_article"-->
-<!--            app:argType="com.example.newsapiclient.data.model.Article" />-->
+
+        <argument
+            android:name="selected_article"
+            app:argType="com.example.newsapiclient.data.model.Article" />
     </fragment>
 </navigation>

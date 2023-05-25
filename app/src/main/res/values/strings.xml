@@ -2,4 +2,5 @@
     <string name="app_name">NewsAPIClient</string>
     <string name="it_s_article_image">It\'s article image</string>
     <string name="search">search</string>
+    <string name="its_bookmark_icon">its_bookmark_icon</string>
 </resources>

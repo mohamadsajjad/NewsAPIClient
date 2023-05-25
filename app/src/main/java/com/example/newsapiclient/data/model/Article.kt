@@ -1,10 +1,14 @@
 package com.example.newsapiclient.data.model
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "articles")
 data class Article(
-
+    @PrimaryKey(autoGenerate = true)
+    val id: Int? = null,
     @SerializedName("author")
     val author: String?,
     @SerializedName("content")
@@ -21,4 +25,4 @@ data class Article(
     val url: String?,
     @SerializedName("urlToImage")
     val urlToImage: String?
-)
+):java.io.Serializable
